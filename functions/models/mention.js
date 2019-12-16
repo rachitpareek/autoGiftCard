@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
-//Schema object representing a user.
-const UserSchema = new mongoose.Schema({
+//Schema object representing a tag.
+const MentionSchema = new mongoose.Schema({
      Name: {
           type: String, //their handle
           required: true
@@ -16,4 +16,4 @@ const UserSchema = new mongoose.Schema({
    }
 });
 
-module.exports = mongoose.model('User', UserSchema)
+module.exports = mongoose.model('Mention', MentionSchema)
