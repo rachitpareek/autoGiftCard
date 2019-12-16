@@ -21,6 +21,7 @@ router.get('/', function(req, res, next){
 //FIXME: Need to somehow store the handle of the person tagging.
 //FIXME: Need to store giftcard codes and values (remaining).
 router.post('/', function(req, res, next){
+    console.log(req.body)
     let newMention = new Mention({
         Name: req.body.entry[0].changes[0].value.media_id, 
         Gift_Card_Value: '$5',

@@ -18,11 +18,13 @@ const path = require ('path');
 const functions = require('firebase-functions');
 
 const index = require('./routes/index');
+const privacy = require('./routes/privacyPolicy')
 const PORT = process.env.PORT || 4000; 
 
 server.use(bodyParser());
 server.use(cors());
 server.use('/', index);
+server.use('/privacypolicy', privacy);
 server.set('views', path.join(__dirname, 'views'));
 server.set('view engine', 'ejs');
 server.engine('html', require('ejs').renderFile);
