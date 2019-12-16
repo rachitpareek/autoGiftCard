@@ -1,6 +1,11 @@
 # Overview
 This file describes the implementation and capability of my autoGiftCard application. This app was created using Node.js, Express, Mongo Atlas, Mongoose, Firebase Cloud Functions, and the Instagram Webhook API. The profile I created for this project was `@autogiftcard`.
 
+# Deliverables
+1. The zip file containing all project files was attached to my email response.
+2. `@autogiftcard`
+3. See `Testing`. 
+
 # Inherency
 Understanding the engagement of customers with businesses on social media presents a phenomenal opportunity for businesses active on these sites to gain customer insight and assemble valuable stores of data on existing customers & potential leads. This application takes advantage of this situation and aims to consume mentions data for IG business accounts and store this information in a database. 
 
