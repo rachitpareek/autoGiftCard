@@ -29,7 +29,7 @@ server.set('views', path.join(__dirname, 'views'));
 server.set('view engine', 'ejs');
 server.engine('html', require('ejs').renderFile);
 
-var mongoDBURL = 'mongodb+srv://admin:admin@default-nnxo9.gcp.mongodb.net/test?retryWrites=true&w=majority';
+var mongoDBURL = 'mongodb+srv://admin:admin@default-nnxo9.gcp.mongodb.net/pending-discount-eligibility?retryWrites=true&w=majority';
 mongoose.connect(mongoDBURL, {
     useNewUrlParser: true, 
     useUnifiedTopology: true 
