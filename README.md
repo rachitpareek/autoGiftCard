@@ -1,10 +1,5 @@
 # Overview
-This file describes the implementation and capability of my autoGiftCard application. This app was created using Node.js, Express, Mongo Atlas, Mongoose, Firebase Cloud Functions, and the Instagram Webhook API. The profile I created for this project was `@autogiftcard`.
-
-# Deliverables
-1. The zip file containing all project files was attached to my email response.
-2. `@autogiftcard`
-3. See `Testing`. 
+This file describes the implementation and capability of the autoGiftCard application. This app was created using Node.js, Express, Mongo Atlas, Mongoose, Firebase Cloud Functions, and the Instagram Webhook API. The profile I created for this project was `@autogiftcard`.
 
 # Inherency
 Understanding the engagement of customers with businesses on social media presents a phenomenal opportunity for businesses active on these sites to gain customer insight and assemble valuable stores of data on existing customers & potential leads. This application takes advantage of this situation and aims to consume mentions data for IG business accounts and store this information in a database. 
@@ -54,5 +49,4 @@ Format:
 - Webhook functionality: As seen in this recent (Oct. 2019) Stack OverFlow post (`https://stackoverflow.com/questions/58545332/why-is-the-instagram-graph-api-webhook-not-working`), the Instagram Webhook API will not provide production-level functionality without a verified app review, which is why simply tagging my account will not result in a trigger. However, please see `Testing` to see the functionality of this application.
 
 # Improvements
-- Gift Card Balances: Ideally, I would also have created a function that gave each person's gift card a unique ID and stored that information along with the card's remaining balance in a separate collection. Then, I would update this collection whenever a customer used one of their cards.
 - Instagram authentication: The IG Webhook API sends a JSON payload containing the media_id & comment_id of the post or comment containing the mention. My current implementation extracts the media_id and stores it in the database. However, in order to convert this information to the handle of the user themselves (which is the data we really want), I would use the Instagram Graph API, and this would require OAuth authentication that I did not yet implement.
